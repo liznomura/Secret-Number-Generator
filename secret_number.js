@@ -1,9 +1,8 @@
+/*jshint esversion: 6 */
 'use strict';
 module.exports = function() {
-  var secretNumber = 0;
-  var randomNumber = Math.random() * (1000000);
+  let secretNumber = Math.floor(Math.random() * (1000001));
   return function() {
-    secretNumber = randomNumber;
     return secretNumber;
   };
 };
