@@ -1,9 +1,9 @@
 'use strict';
-
 module.exports = function() {
   var secretNumber = 0;
+  var randomNumber = Math.random() * (1000000);
   return function() {
-    secretNumber = Math.random() * (1000000 - 0);
+    secretNumber = randomNumber;
     return secretNumber;
   };
 };
